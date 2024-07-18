@@ -35,24 +35,9 @@ The data is divided into two zip files, `X_train.zip` and `X_test.zip`, and two 
 - `TEAM_DANGEROUS_ATTACKS`
 - `TEAM_FOULS`
 - `TEAM_GAME_DRAW`
-- `TEAM_GAME_LOST`
-- `TEAM_GAME_WON`
 - `TEAM_GOALS`
-- `TEAM_INJURIES`
-- `TEAM_OFFSIDES`
-- `TEAM_PASSES`
-- `TEAM_PENALTIES`
-- `TEAM_REDCARDS`
-- `TEAM_SAVES`
-- `TEAM_SHOTS_INSIDEBOX`
-- `TEAM_SHOTS_OFF_TARGET`
-- `TEAM_SHOTS_ON_TARGET`
-- `TEAM_SHOTS_OUTSIDEBOX`
-- `TEAM_SHOTS_TOTAL`
-- `TEAM_SUBSTITUTIONS`
-- `TEAM_SUCCESSFUL_PASSES`
-- `TEAM_SUCCESSFUL_PASSES_PERCENTAGE`
 - `TEAM_YELLOWCARDS`
+and more...
 
 #### Player Data
 
@@ -67,6 +52,33 @@ The data is divided into two zip files, `X_train.zip` and `X_test.zip`, and two 
 - Similar to team statistics but more detailed.
 
 ### Modeling Approach
+
+#### Data Preprocessing
+
+1. **Data Cleaning:**
+   - Handle missing values.
+   - Remove irrelevant columns.
+
+2. **Data Integration:**
+   - Merge data from different sources if necessary.
+   - Ensure data consistency.
+
+3. **Normalization/Standardization:**
+   - Scale numerical features as needed.
+
+#### Feature Engineering
+
+1. **Feature Selection:**
+   - Identify relevant features for prediction.
+
+2. **Feature Transformation:**
+   - Encode categorical variables.
+   - Create new features from existing ones if beneficial.
+
+#### Models
+
+1. **Model Selection:**
+   - Choose appropriate models for prediction (e.g., Logistic Regression, Random Forest, Neural Networks).
 ### Evaluation
 ### Collaboration
 
